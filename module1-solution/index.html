@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html ng-app="LunchCheck">
 <head>
+    <style> 
+    .container{
+        text-align: center;
+        
+    }
+    </style>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
         <script src= "app.js"></script>
 </head>
 <body ng-controller = "LunchCheckController" >
-    <div>
+    <div class = containet>
+        <div> Enter the lunch Items, I will say whether they are enough or too much </div>
+        <strong> NOTE: consider empty item between two commas </strong> <br>
+        
         <input type="text" ng-model ="name"> 
         <button ng-click = "sendString();"> Check If Too Much </button>
-        <div> the food is : {{alert}} </div>
+        <div> The food is : {{alert}} </div>
     </div>
     
 </body>
