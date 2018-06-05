@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app ='MsgApp'>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+        <script src= "app.js"></script>
+</head>
+<body ng-controller= "MsgController">
+    <h1> Expressions and interpoliation</h1>
+    <div> {{name}} has meesage for u:<br>
+       Original: {{sayMessage()}}<br>
+       Loves: {{sayLovesMessage()}}
+        <div>
+            <button ng-click="swaMou()"> swathi and mounika</button>
+            <br>
+            <img ng-src="images/swamonu_{{stateOfBeing}}.jpg" style="height: 200px; width:200px">
+        </div>
+    </div>    
+</body>
+</html>
