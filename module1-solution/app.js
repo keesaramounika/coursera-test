@@ -15,7 +15,7 @@
         function splitString(stringToSplit, separator){
             var arrayOfStrings= stringToSplit.split(separator);
             var len = arrayOfStrings.length;
-            if(len == 0){
+            if(len == 1){
                 message = "Enter The Items";
             }
             else if(len <= 3){
